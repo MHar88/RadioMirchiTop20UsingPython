@@ -1,0 +1,17 @@
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\bin\Debug\TOP 20 songs using Python.exe
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\bin\Debug\TOP 20 songs using Python.pdb
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 using Python.csprojAssemblyReference.cache
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\MainWindow.g.cs
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\App.g.cs
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 songs using Python_MarkupCompile.cache
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 songs using Python_MarkupCompile.lref
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\MainWindow.baml
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 songs using Python.g.resources
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP_20_using_Python.Properties.Resources.resources
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 using Python.csproj.GenerateResource.cache
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 using Python.csproj.CoreCompileInputs.cache
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 using Python.csproj.CopyComplete
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 songs using Python.exe
+C:\Users\kavi\source\repos\TOP 20 using Python\TOP 20 using Python\obj\Debug\TOP 20 songs using Python.pdb
