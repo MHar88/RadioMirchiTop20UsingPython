@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,96 +32,48 @@ namespace TOP_20_using_Python
         public MainWindow()
         {
             InitializeComponent();
-           
-
-
         }
-       
-       
-        public System.Data.DataTable readJson(string filePath)
-        {
-            System.Data.DataTable dt = new System.Data.DataTable();
-            using (System.IO.StreamReader sr = new System.IO.StreamReader(filePath))
-            {
-                string strLine = sr.ReadLine();
 
-                string[] strArray = strLine.Split(',');
-              
-                    dt.Columns.Add("Song List");
-                   
-                System.Data.DataRow dr = dt.NewRow();
-
-               
-                   
-                   
-                    foreach (string s in strArray)
-                    {
-                        string[] value = s.Split(':');
-                        dt.Rows.Add(value[1].Replace("</h2>",null).Replace("<h2>",null));
-                    }
-                
-            }
-            return dt;
-        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string file = null;
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-
-
-
             // Set filter for file extension and default file extension 
             dlg.DefaultExt = "Json";
             dlg.Filter = "Json Files (*.Json)|*.Json";
-
-
             // Display OpenFileDialog by calling ShowDialog method 
             Nullable<bool> result = dlg.ShowDialog();
-
-
             // Get the selected file name and display in a TextBox 
             if (result == true)
             {
-                // Open document 
+               // Open document 
                 file = dlg.FileName;
-
-            }
-
-
-
+            }         
             if (file.Length != 0)
             {
-
-                DataTable datasource = readJson(file);
-
-                person.Clear();
-
-
-                foreach (DataRow dr in datasource.Rows)
+                using (StreamReader reader = new StreamReader(file))
+                {
+                    string json = reader.ReadToEnd();                 
+                    var res = JsonConvert.DeserializeObject<ResRoot>(File.ReadAllText(file));
+                    foreach (var item in res.Files)
                     {
-                   
-
-
-                    person.Add(new Songs { Name = dr[0].ToString() });
-                            
-
-                        
-
-                       
-                   }
+                        person.Add(new Songs { Movie = item.Value.Movie , SongTitle = item.Value.SongTitle, Artist = item.Value.Artist, Rank = item.Value.Rank });                    
+                    }
+                }
                 grdNames.ItemsSource = person;
-            }
-
-            
-
-
-
-
+            }           
         }
     }
     public class Songs
     {
-        public string Name { get; set; }
+        public string Movie { get; set; }
+        public string SongTitle { get; set; }
+        public string Artist { get; set; }
+        public string Rank { get; set; }
+    }
+    public class ResRoot
+    {
+        public Dictionary<string, Songs> Files { set; get; }
     }
 }
 
