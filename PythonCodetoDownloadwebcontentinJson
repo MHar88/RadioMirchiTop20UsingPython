@@ -16,9 +16,7 @@ for i in range(1,21):
     a = str(Movie[0])
     val=a.split("<br/>")   
     data.append({'Movie':val[0].replace("<h3>"," ").strip() ,'SongTitle': str(SongTitle[0]).replace("<h2>"," ").replace("</h2>"," ").strip(),'Artist':val[1].replace("\n", " ").replace("</h3>"," ").replace(","," ").strip(),'Rank':i})
-    
-
-a=range(1,21)
+    a=range(1,21)
 z=dict(zip(a,data))    
     
 with open('Inputjson.json','w') as f:
