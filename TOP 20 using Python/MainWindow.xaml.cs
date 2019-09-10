@@ -33,8 +33,7 @@ namespace TOP_20_using_Python
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+   private void Button_Click(object sender, RoutedEventArgs e)
         {
             string file = null;
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
@@ -49,7 +48,7 @@ namespace TOP_20_using_Python
                // Open document 
                 file = dlg.FileName;
             }         
-            if (file.Length != 0)
+         if (file.Length != 0)
             {
                 using (StreamReader reader = new StreamReader(file))
                 {
